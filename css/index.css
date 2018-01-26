@@ -491,6 +491,10 @@ h2 .a4:hover{
 	margin-top: 2px;
     padding: 0 3px 0 5px;
     line-height: 22px;
+    cursor: pointer;
+}
+.sec_ten ul li .p0p01:hover{
+	color: #FF6428;
 }
 .sec_ten ul li .p0p02{
 	padding: 0 3px 0 5px;
