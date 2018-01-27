@@ -77,8 +77,6 @@ a{
 .sec_one div .sam_a1{
 	font-weight: 700;
 }
-<<<<<<< HEAD
-=======
 .sec_one .las_dv a{
 	display: inline-block;
 	width: 72px;
@@ -560,7 +558,6 @@ h2 .a4:hover{
 
 
 
->>>>>>> origin/master
 
 
 .maybesee{
@@ -628,6 +625,7 @@ h2 .a4:hover{
 }
 
 .head_bos{
+	width: 100%;
 	overflow: hidden;
 	display: none;
     height: 451px;
@@ -688,10 +686,12 @@ h2 .a4:hover{
 	color: #ccc;
 	font-size: 13px;	
 }
-.head_two .icon-arrowdown{
+.head_bos .arrowtop{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -18px;
 	display: block;
-	margin-left: 940px;
-	margin-top: 410px;
 	height: 36px;
 	width: 36px;
 	font-size: 30px;
@@ -732,20 +732,22 @@ h2 .a4:hover{
 
 
 #bigg{
+	width: 100%;
 	height: 580px;
 	margin: 0 auto;
 }
 .slider{
 	height: 580px;	
     position: relative;
-    width: 1920px;
+    width: 100%;
     margin: 0 auto;
 }
 .slider #slide li img{
-	width: 1920px;
+	width: 100%;
 	height: 580px;
 }
 .slider #slide ul li{
+	width: 100%;
 	float: left;
     position: absolute;
     top: 0;
@@ -757,8 +759,7 @@ h2 .a4:hover{
 .navigation{
 	position: absolute;
 	top: 63px;
-	right: 50%;
-	margin-right: -854px;
+	right: 10%;
 	width: 240px;
 	height: 352px;
 	padding-top: 70px;
@@ -798,7 +799,8 @@ h2 .a4:hover{
 
 .search{
 	position: absolute;
-	left: 700px;
+	left: 50%;
+	margin-left: -212px;
 	top: 10px;
 }
 #search{

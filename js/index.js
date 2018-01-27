@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 window.onload=function(){
 	
 	var arrowdown=document.getElementsByClassName("icon-arrowdown")[0];
@@ -119,7 +118,6 @@ window.onload=function(){
 	
 	
 }
-=======
 $(function(){
 	$(".sec_two ul .timg02").mouseenter(function(){
 		$(this).css("display","none");
@@ -160,4 +158,3 @@ $(function(){
 	
 	
 })
->>>>>>> origin/master
