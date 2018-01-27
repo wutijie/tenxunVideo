@@ -1263,12 +1263,18 @@ h2 .a4:hover{
 	text-decoration: none;
     cursor: pointer;
 }
+<<<<<<< Updated upstream
 .footer_lastone{
+=======
+
+.footer_inner_two{
+>>>>>>> Stashed changes
 	line-height: 30px;
     padding: 25px 0;
     text-align: center;
     color: #999;
 }
+<<<<<<< Updated upstream
 .footer_lasttwo{
 	line-height: 30px;
 
@@ -1286,3 +1292,12 @@ h2 .a4:hover{
 .footer a:hover{
 	color: #ff6428;
 }
+=======
+.footer_inner_two_fir{
+	line-height: 30px;
+    padding: 25px 0;
+    text-align: center;
+    color: #999;
+	
+}
+>>>>>>> Stashed changes
