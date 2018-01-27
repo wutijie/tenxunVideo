@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="icon" href="img/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="css/xqingye2.css"/>
+		<script src="js/xqingye2.js"></script>
+		<script src="js/jsonp.js"></script>
+		<script src="js/jquery-3.1.0.js"></script>
+		<link rel="stylesheet" type="text/css" href="font_3yn76ng87mrc0udi/iconfont.css"/>
+	</head>
+	<body>
+		
+		
+		
+		<script src="https://api.douban.com/v2/movie/in_theaters?callback=fun"></script>
+		<script src="https://api.douban.com/v2/movie/us_box?callback=fun2"></script>
+		
+		<section class="sec_thr center">
+			<img src="img/agin_one01.jpg"/>
+		</section>
+		
+		<script src="https://api.douban.com/v2/movie/coming_soon?callback=fun3"></script>
+		
+		
+		
+		
+		
+		
+		<script>
+			var bigdv=document.getElementById("bigdv");
+			var imimgs=bigdv.getElementsByTagName("img");
+			var ririgdv=bigdv.getElementsByClassName("rigdiv");
+			
+			var bigdv2=document.getElementById("bigdv2");
+			var imimgs2=bigdv2.getElementsByTagName("img");
+			var ririgdv2=bigdv2.getElementsByClassName("rigdiv");
+			
+			var bigdv3=document.getElementById("bigdv3");
+			var imimgs3=bigdv3.getElementsByTagName("img");
+			var ririgdv3=bigdv3.getElementsByClassName("rigdiv");
+			
+			
+			hovers(imimgs,ririgdv);
+			hovers(imimgs2,ririgdv2);
+			hovers(imimgs3,ririgdv3);
+			function hovers(img_a,ridv_b){
+				for(var i=0;i<img_a.length;i++){
+					img_a[i].index=i;
+					img_a[i].onmouseenter=function(){
+						ridv_b[this.index].style.display="block";
+					}
+					ridv_b[i].onmouseleave=function(){
+						this.style.display="none";
+					}
+				}
+			}
+		</script>
+	</body>
+</html>
