@@ -34,13 +34,26 @@ body{
 a{
 	text-decoration: none;
 }
+i{
+	font-style: normal;
+}
 
-
-
-
+#bacc{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 90px;
+	background: linear-gradient(to top,#fff,rgba(255,255,255,.92));
+	padding-top: 20px;
+}
 .sec_one{
-	height: 59px;
-	margin-bottom: 25px;
+	position: absolute;
+	left: 50%;
+	margin-left: -600px;
+	bottom: 0;
+	z-index: 99;
+	height: 90px;
+	
 }
 .sec_one div{
 	width: 170px;
@@ -63,7 +76,7 @@ a{
 	padding: 0;
 	border: none;
 	margin-top: 10px;
-	text-align: center;
+	padding: 0;
 }
 .sec_one div a{
 	padding: 0 5px;
@@ -85,14 +98,32 @@ a{
 	margin: 0;
 }
 .sec_one .las_dv a i{
+	display: inline-block;
 	width: 20px;
 	height: 20px;
-	margin: 0 26px 5px;
+	margin: 0 26px 20px;
+	font-size: 20px;
+	color: #ff6428;
+	border: 1px solid transparent;
 }
 .sec_one .las_dv a p{
 	line-height: 0;
+	text-align: center;
 }
-
+.sec_one .las_dv a img:nth-of-type(1){
+	width: 76px;
+	height: 76px;
+	position: absolute;
+	right: -20px;
+	top: 0;
+}
+.sec_one .las_dv a img:nth-of-type(2){
+	width: 76px;
+	height: 76px;
+	position: absolute;
+	right: -20px;
+	top: 0;
+}
 
 
 .sec_two{
@@ -108,6 +139,9 @@ h2 .a3{
     font-weight: 500;
     color: #202020;
     margin-right: 10px;
+}
+h2 img{
+	width: 36px;
 }
 h2 .a4{
 	margin-left: 5px;
@@ -227,6 +261,11 @@ h2 .a4:hover{
 	margin-right: 6px;
 	line-height: 40px;
     border-radius: 100%;
+    overflow: hidden;
+}
+.sec_two .lef .dv1 span img{
+	width: 36px;
+	height: 36px;
 }
 .sec_two .lef .dv1 a{
 	font-size: 16px;
@@ -286,6 +325,7 @@ h2 .a4:hover{
     margin: 2px 5px 0 0;
     border-radius: 50%;
     float: left;
+    overflow: hidden;
 }
 .sec_thr h2 .aa4 .spa2{
 	display: inline-block;
@@ -436,8 +476,18 @@ h2 .a4:hover{
 .sec_nine div{
 	width: 239px;
 	height: 98px;
+	position: relative;
+	left: 350px;
+	overflow: hidden;
+	border: 1px solid transparent;
 }
-
+.sec_nine div img{
+	width: 89px;
+	height: 89px;
+	position: absolute;
+	left: 0px;
+	top: 20px;
+}
 
 
 
@@ -562,14 +612,24 @@ h2 .a4:hover{
 
 .maybesee{
 	width: 100%;
-	background: rgba(0,0,0,0.7);
 	/*opacity: 0.7;*/
 	
 }
 .head_one{
+	
 	height: 42px;
 	line-height: 42px;
 	border: 1px solid transparent;
+	background: url('../img/top-01.jpg') no-repeat 0% 100%,
+				url('../img/top-02.jpg') no-repeat 13% 100%,
+				url('../img/top-03.jpg') no-repeat 26% 100%,
+				url('../img/top-04.jpg') no-repeat 39% 100%,
+				url('../img/top-05.jpg') no-repeat 52% 100%,
+				url('../img/top-06.jpg') no-repeat 65% 100%,
+				url('../img/top-07.jpg') no-repeat 78% 100%,
+				url('../img/top-08.jpg') no-repeat 91% 100%,
+				url('../img/top-09.jpg') no-repeat 100% 100%;
+	background-color: rgba(0,0,0,0.7);
 }
 .head_one:hover{
 	animation: 0.5s move_head linear 1;
@@ -585,12 +645,40 @@ h2 .a4:hover{
 		width: 100%;
 		height: 60px;
 		line-height: 60px;
-		background: rgba(0,0,0,0.5);
+		background-color: rgba(0,0,0,0.5);
 	}
 }
+.blackmu{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 43px;
+	background: rgba(0,0,0,.7);
+	position: absolute;
+	z-index: 3;
+}
+.blackmu:hover{
+	animation: 0.4s move_mu linear 1;
+	animation-fill-mode:forwards;
+}
+@keyframes move_mu{
+	0%{
+		width: 100%;
+		height: 42px;	  
+		
+	}
+	100%{
+		width: 100%;
+		height: 61px;
+		background-color: rgba(0,0,0,0.3);
+	}
+}
+
 .head_one_fir{
 	width: 200px;
-	margin: 0 auto;		
+	margin: 0 auto;	
+	position: relative;
+	z-index: 2;	
 }
 .head_one span{
 	color: #fff;
@@ -797,45 +885,199 @@ h2 .a4:hover{
 }
 
 
+
+.logo-tenxun{
+	position: absolute;
+	top: 14px;
+	left: 100px;
+}
+.logo-tenxun-one{
+	width: 160.85px;
+	height: 60.25px;
+}
+.logo-tenxun-two{
+	position: relative;
+	left: -20px;
+	top: -3px;
+	width: 105px;
+	height: 59px;
+}
+
 .search{
 	position: absolute;
 	left: 50%;
-	margin-left: -212px;
-	top: 10px;
+	margin-left: -275px;
+	top: 12px;
 }
 #search{
-	width: 424px;
+	width: 550px;
 	height: 40px;
 	padding-left: 20px;
 	border-radius: 20px;
+	border-color: transparent;
 	background: rgba(255,255,255,0.5);
+	outline: none;
 }
-.hotsearch{
+.search .hotsearch{
 	width: 64px;
 	height: 40px;
 	line-height: 40px;
 	position: relative;
-	
+	top: -40px;
+	left: 369px;
 }
 .hotsearch .icon-zhuzhuangtu{
 	position: absolute;
-	top: -20px;
-	right: px;
+	color: #ff6428;
 }
-.search_button{
-	
+.hotsearch_span{
+	position: absolute;
+	top: 0px;
+	left: 20px;
+	color: #ff6428;
 }
-
-
-
-
-
-
-
-
-
-
-
+.search .search_button{
+	width: 90px;
+	height: 40px;
+	padding-right: 20px;
+	border-bottom-right-radius: 20px;
+	border-top-right-radius: 20px;
+	border: 2px solid #ff6428;
+	background: linear-gradient(to right,#ff850b 0,#ff5945 100%);
+	position: relative;
+	top: -84px;
+	left: 462px;	
+}
+.search_button .icon-search{
+	color: #fff;
+	font-size: 24px;
+	line-height: 40px;
+	position: absolute;
+	left: 18px;
+}
+.allsearch{
+	color: #fff;
+	line-height: 40px;
+	position: absolute;
+	left: 48px;
+}
+.search .search_button:hover{
+	background: #ff6428;
+}
+.search_right{
+	position: relative;
+	left: 820px;
+	top: -120px;
+	width: 228px;
+	height: 43px;
+}
+.search_right_fir{
+	position: absolute;
+}
+.search_right_fir img{
+	width: 20px;
+	height: 20px;
+}
+.search_right_fir span{
+	position: relative;
+	top: 20px;
+	left: -22px;
+	color: #ffcf5d;
+	font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;
+}
+.search_right_sed{
+	position: absolute;
+	left: 38px;
+}
+.search_right .icon-time{
+	font-size: 20px;
+	color: #fff;
+	opacity: 0.6;
+    transition: opacity 50ms ease-in;
+    position: relative;
+    left: 6px;
+}
+.search_right_sed span:nth-of-type(2){
+	position: relative;
+	top: 18px;
+	left: -20px;
+	color: #fff;
+	opacity: 0.6;
+    transition: opacity 50ms ease-in;
+	font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;
+}
+.search_right_thr{
+	position: absolute;
+	left: 81px;
+}
+.search_right .icon-icupload{
+	font-size: 20px;
+	color: #fff;
+	opacity: 0.6;
+    transition: opacity 50ms ease-in;
+    position: relative;
+    left: 6px;
+}
+.search_right_thr span:nth-of-type(2){
+	position: relative;
+	top: 18px;
+	left: -20px;
+	color: #fff;
+	opacity: 0.6;
+    transition: opacity 50ms ease-in;
+	font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;
+}
+.search_right_fou{
+	position: absolute;
+	left: 113px;
+}
+.search_right .icon-dianshi{
+	font-size: 20px;
+	color: #fff;
+	opacity: 0.6;
+    transition: opacity 50ms ease-in;
+    position: relative;
+    left: 25px;
+}
+.search_right_fou span:nth-of-type(2){
+	position: relative;
+	top: 18px;
+	left: -20px;
+	color: #fff;
+	opacity: 0.6;
+    transition: opacity 50ms ease-in;
+	font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;
+}
+.search_right_fiv{
+	position: absolute;
+	left: 182px;
+	top: -5px;
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	border: 1px solid transparent;
+	border-radius: 40px;
+}
+.search_right_fiv img{
+	width: 40px;
+	height: 40px;
+}
+#search_ul{
+	width: 444px;
+	background: #fff;
+	position: relative;
+	top: -125px;
+	left: 18px;
+}
+.souli{
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10px;	
+	font-size: 16px;
+}
+.souli:hover{
+	background: #eee;
+}
 
 
 
@@ -950,11 +1192,34 @@ h2 .a4:hover{
 }
 .footer_inner_thr_fir_icon{
 	width: 400px;
-	height: 90px;
+	height: 70px;
+	display: block;
 }
-
-
-
+.footer_inner_thr_fir_icon a{
+	text-decoration: none;
+	display: inline-block;
+    width: 80px;
+    color: #666;
+    outline: 0 none;
+    cursor: pointer;
+}
+.footer_inner_thr_fir_icon a i{
+	display: block;
+    font-size: 50px;
+    margin: 0 auto 20px;
+    color: #999;  
+}
+.footer_inner_thr_fir_icon a span{
+	margin-left: -18px;
+	display: block;
+    width: 80px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #666;
+    font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;
+}
 
 
 
@@ -997,4 +1262,27 @@ h2 .a4:hover{
 	color: #666;
 	text-decoration: none;
     cursor: pointer;
+}
+.footer_lastone{
+	line-height: 30px;
+    padding: 25px 0;
+    text-align: center;
+    color: #999;
+}
+.footer_lasttwo{
+	line-height: 30px;
+
+    text-align: center;
+    color: #999;
+}
+.footer_lasttwo a{
+	color: #999;
+	text-decoration: none;
+    cursor: pointer;
+}
+.footer_lasttwo a:active,.footer_lasttwo a:visited,.footer_lasttwo a[tabindex='-1']:focus {
+    outline: 0 none;
+}
+.footer a:hover{
+	color: #ff6428;
 }

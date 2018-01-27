@@ -107,7 +107,7 @@ window.onload=function(){
 			ul.style.display='block';
 			
 			for(var i=0;i<data.s.length;i++){
-				str+='<li>'+data.s[i]+'</li>';
+				str+='<li class="souli">'+data.s[i]+'</li>';
 			}
 			ul.innerHTML=str;
 		}
