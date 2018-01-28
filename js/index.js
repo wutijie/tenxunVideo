@@ -152,8 +152,14 @@ $(function(){
 	
 	
 	
-	
-	
+	$(window).scroll(function(){
+		var heheig=$(document).scrollTop();
+		if(heheig>700){
+			$("#fixxed").css("display","block");
+		}else{
+			$("#fixxed").css("display","none");
+		}
+	})
 	
 	
 	
