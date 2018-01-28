@@ -600,3 +600,6 @@ function fun4(data){
 		dv.appendChild(rigdiv);
 	}
 }
+
+
+
