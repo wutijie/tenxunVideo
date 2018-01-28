@@ -112,12 +112,11 @@ window.onload=function(){
 			ul.innerHTML=str;
 		}
 	}
-}
 
 
 
 
-$(function(){
+
 	$(".sec_two ul .timg02").mouseenter(function(){
 		$(this).css("display","none");
 		$(this).prev().css("display","block");
@@ -175,4 +174,5 @@ $(function(){
 	
 	
 	
-})
+
+}

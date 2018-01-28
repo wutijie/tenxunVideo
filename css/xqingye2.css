@@ -47,7 +47,26 @@ i,em{
 
 
 
-
+#fixxed{
+	width: 100%;
+	height: 73px;
+	background-color: rgba(255,255,255,.95);
+	box-shadow: 0 2px 6px rgba(0,0,0,.1);
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	display: none;
+}
+#fixxed #search{
+	border: 2px solid #FF6428;
+}
+#fixxed .search_right span{
+	color: #666;
+	cursor: pointer;
+}
+#fixxed .search_right span:hover{
+	color: #000;
+}
 
 
 .hh2{
@@ -917,3 +936,54 @@ i,em{
 	color: #ff6428;
 }
 
+
+.cebian{
+	width: 40px;
+	height: 160px;
+	position: fixed;
+	right: 0;
+	bottom: 100px;
+	box-shadow: 0 2px 8px 0 rgba(0,0,0,.18);
+	text-align: center;
+	display: none;
+}
+.cebian div{
+	width: 100%;
+	height: 40px;
+	background: #fff;
+	line-height: 40px;
+	color: #999;
+	font-weight: 600;
+	font-size: 20px;
+	cursor: pointer;
+	position: relative;
+}
+.cebian div:nth-of-type(4) span{
+	display: inline-block;
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	-ms-transform: rotateX(180deg);
+	-o-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+.cebian div:hover{
+	background: #FF6428;
+}
+.cebian div:hover span{
+	color: #fff;
+}
+.cebian div a{
+	position: absolute;
+	top: 0;
+	left: -85px;
+	display: inline-block;
+	width: 85px;
+	height: 40px;
+	background: #fff;
+	line-height: 40px;
+	font-size: 14px;
+	color: #202020;
+	font-weight: normal;
+	box-shadow: 0 2px 8px 0 rgba(0,0,0,.18);
+	/*display: none;*/
+}

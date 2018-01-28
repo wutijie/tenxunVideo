@@ -112,7 +112,25 @@ window.onload=function(){
 		}
 	}
 	
+	
+	
+	
+	$(window).scroll(function(){
+		var heheig=$(document).scrollTop();
+		if(heheig>700){
+			$("#fixxed").css("display","block");
+			$(".cebian").css("display","block");
+		}else{
+			$("#fixxed").css("display","none");
+			$(".cebian").css("display","none");
+		}
+	})
+	
+	
+	
+	
 }
+
 
 
 
@@ -151,7 +169,7 @@ function fun(data){
 		var dv=document.createElement('div');
 		dv.className='dv';
 		if((i+1)%6!=0){
-			dv.style.marginRight="6px";
+			dv.style.marginRight="10px";
 		}
 		
 		
@@ -275,7 +293,7 @@ function fun2(data){
 		var dv=document.createElement('div');
 		dv.className='dv';
 		if((i+1)%6!=0){
-			dv.style.marginRight="6px";
+			dv.style.marginRight="10px";
 		}
 		
 		//图片
@@ -384,7 +402,7 @@ function fun3(data){
 		var dv=document.createElement('div');
 		dv.className='dv';
 		if((i+1)%6!=0){
-			dv.style.marginRight="6px";
+			dv.style.marginRight="10px";
 		}
 		
 		
@@ -506,7 +524,7 @@ function fun4(data){
 		var dv=document.createElement('div');
 		dv.className='dv';
 		if((i+1)%6!=0){
-			dv.style.marginRight="6px";
+			dv.style.marginRight="10px";
 		}
 		
 		
@@ -600,3 +618,5 @@ function fun4(data){
 		dv.appendChild(rigdiv);
 	}
 }
+
+
