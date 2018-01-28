@@ -11,7 +11,7 @@ window.onload=function(){
 	var head_two_div=head_two.querySelectorAll("div")[0];	
 	head_one.onclick=function(){
 		head_one.style.display="none";
-		head_bos.style.display="block";			
+		head_bos.style.display="block";
 	}
 	arrup.onclick=function(){
 		head_one.style.display="block";
@@ -170,7 +170,7 @@ function fun(data){
 		ps.style.cursor='pointer';
 		var urls=data.subjects[i].alt;
 		ps.onclick=function(){
-			this.href="https://movie.douban.com/subject/26004132/";
+			this.href="https://v.qq.com/x/cover/2tr6sh7iw7wyvhl.html";
 		}
 		
 		

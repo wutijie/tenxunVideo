@@ -112,12 +112,11 @@ window.onload=function(){
 			ul.innerHTML=str;
 		}
 	}
-	
-	
-	
-	
-	
 }
+
+
+
+
 $(function(){
 	$(".sec_two ul .timg02").mouseenter(function(){
 		$(this).css("display","none");
@@ -156,9 +155,22 @@ $(function(){
 		var heheig=$(document).scrollTop();
 		if(heheig>700){
 			$("#fixxed").css("display","block");
+			$(".cebian").css("display","block");
 		}else{
 			$("#fixxed").css("display","none");
+			$(".cebian").css("display","none");
 		}
+	})
+	
+	
+	
+	
+	
+	$(".cebian .nnow").mouseenter(function(){
+		$(".cebian .nnow a").animate({'display':'block'},100);
+	})
+	$(".cebian .nnow").mouseleave(function(){
+		$(".cebian .nnow a").animate({'display':'none'},100);
 	})
 	
 	
